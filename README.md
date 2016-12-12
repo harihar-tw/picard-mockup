@@ -3,7 +3,9 @@
 
 ###Run the following:
 `npm install`
+
 `webpack`
+
 `webpack-dev-server --inline --content-base build/`
 
 ###Application is available at `localhost:8080`

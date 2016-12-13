@@ -1,104 +1,4 @@
-/*body {*/
-    /*background-color: #342;*/
-/*}*/
 
-/*#main-container {*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*flex-wrap: wrap;*/
-    /*align-items: stretch;*/
-/*}*/
-
-/*#layout-area, #preview-area {*/
-    /*border-radius: 5px;*/
-    /*background-color: rgba(255, 255, 255, 0.8);*/
-    /*margin-top: 10px;*/
-/*}*/
-
-/*#layout-area {*/
-    /*!*height: 300px;*!*/
-    /*width: 400px;*/
-/*}*/
-
-/*#cardList {*/
-    /*list-style-type: none;*/
-    /*margin: 10px;*/
-    /*padding: 0 10px 10px 10px;*/
-    /*overflow-y: auto;*/
-/*}*/
-
-/*#cardList li img {*/
-    /*display: block;*/
-    /*width: 100%;*/
-/*}*/
-
-/*.category img {*/
-    /*!*width: 100%;*!*/
-    /*background-color: #cbcbeb;*/
-    /*margin: 10px 10px 10px 10px;*/
-    /*height: 100px;*/
-    /*position: relative;*/
-    /*top: 10px;*/
-/*}*/
-
-/*#preview-area {*/
-    /*margin-left: 20px;*/
-    /*!*display: flex;*!*/
-/*}*/
-
-/*#preview {*/
-    /*display: flex;*/
-    /*padding: 10px;*/
-/*}*/
-
-/*.layout-subtype {*/
-    /*list-style-type: none;*/
-    /*overflow-y: auto;*/
-    /*margin: 10px 0 10px 10px;*/
-    /*padding: 0;*/
-/*}*/
-
-/*.layout-subtype li {*/
-    /*display: block;*/
-    /*float: left;*/
-    /*margin: 5px 5px 0 5px;*/
-/*}*/
-
-/*.layout-subtype img {*/
-    /*width: 90px;*/
-    /*height: 50px;*/
-    /*cursor: pointer;*/
-/*}*/
-
-/*#card-front, #card-back {*/
-    /*width: 330px;*/
-    /*height: 191px;*/
-    /*background-color: #fff;*/
-/*}*/
-
-/*#card-front {*/
-    /*margin-right: 10px;*/
-/*}*/
-
-/*@media screen and (max-width: 699px) {*/
-    /*#preview {*/
-        /*flex-direction: column;*/
-        /*justify-content: center;*/
-        /*align-items: center;*/
-        /*max-width: 380px;*/
-    /*}*/
-
-    /*#card-back {*/
-        /*position: relative;*/
-        /*top: 10px;*/
-    /*}*/
-
-    /*#card-front {*/
-        /*margin: 0;*/
-    /*}*/
-/*}*/
-
-/*Copied*/
 body {
     margin: 0;
     background-color: #311a28;
@@ -111,17 +11,17 @@ body {
 }
 
 /*body.bg-loaded {*/
-    /*background-position: top left;*/
-    /*background-color: #311a28;*/
-    /*background-image: url(https://lh5.googleusercontent.com/mLKsrDqZbjjDDvpjJrdMZ4ExyzY_gjz9N-73n6p3U1KHz_C0U7RAUAutk5G4VaudJUQt4KxdO7BguEnxNU_7N12asNbJP5dwPKH4i4UIblsHb9xlHccMMlHqBRelMlQx3olZIOp4);*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
+/*background-position: top left;*/
+/*background-color: #311a28;*/
+/*background-image: url(https://lh5.googleusercontent.com/mLKsrDqZbjjDDvpjJrdMZ4ExyzY_gjz9N-73n6p3U1KHz_C0U7RAUAutk5G4VaudJUQt4KxdO7BguEnxNU_7N12asNbJP5dwPKH4i4UIblsHb9xlHccMMlHqBRelMlQx3olZIOp4);*/
+/*background-repeat: no-repeat;*/
+/*background-size: cover;*/
 /*}*/
 
 /*body.page-loaded .wrapper {*/
-    /*opacity: 1;*/
-    /*height: 100%;*/
-    /*overflow: auto;*/
+/*opacity: 1;*/
+/*height: 100%;*/
+/*overflow: auto;*/
 /*}*/
 
 body,
@@ -136,12 +36,7 @@ body * {
 }
 
 .wrapper {
-    opacity: 0;
-    height: 0;
     overflow: hidden;
-    display: -webkit-flex;
-    -webkit-flex-direction: column;
-    -webkit-align-content: stretch;
     display: flex;
     flex-direction: column;
     align-content: stretch;
@@ -178,11 +73,6 @@ body * {
 
 .main-content {
     position: relative;
-    display: -webkit-flex;
-    -webkit-flex-direction: row;
-    -webkit-align-items: stretch;
-    -webkit-justify-content: center;
-
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -191,24 +81,23 @@ body * {
     padding: 0 20px;
 }
 
-.layout-area,
-.form-area {
-    width: 25%;
+.layout-area {
+    width: 33.3333333333%;
     margin-right: 15px;
     overflow-y: auto;
     overflow-x: hidden;
 }
 
 .layout-area,
-.preview-area,
-.form-area {
+.preview-area {
     background: rgba(255, 255, 255, 0.8);
     padding: 15px;
     border-radius: 10px;
 }
 
 .preview-area {
-    width: 50%;
+    width: 66.66666666667%;
+    position: relative;
 }
 
 .footer {
@@ -216,13 +105,6 @@ body * {
     justify-content: center;
     width: 100%;
     z-index: 1;
-}
-
-/*Copied*/
-
-.preview-area {
-    position: relative;
-    min-width: 700px;
 }
 
 .outer-preview {
@@ -263,8 +145,7 @@ body * {
 }
 
 .colors-list li.selected {
-    border-width: 5px;
-    border-color: #fff;
+    border: 5px solid #fff;
     border-radius: 4px;
     background-clip: padding-box;
 }
@@ -279,16 +160,12 @@ body * {
     border-right: 0;
     width: 10px;
     height: 5px;
-    -webkit-transform: translate(-50%, -50%) rotate(-45deg) scale(0);
-    -moz-transform: translate(-50%, -50%) rotate(-45deg) scale(0);
     transform: translate(-50%, -50%) rotate(-45deg) scale(0);
     z-index: 1;
     transition: all .3s ease;
 }
 
 .colors-list li.selected:after {
-    -webkit-transform: translate(-50%, -50%) rotate(-45deg) scale(1.2);
-    -moz-transform: translate(-50%, -50%) rotate(-45deg) scale(1.2);
     transform: translate(-50%, -50%) rotate(-45deg) scale(1.2);
 }
 
@@ -300,10 +177,6 @@ body * {
     width: 671px;
     height: 191px;
     margin: 0 auto;
-    display: -webkit-flex;
-    -webkit-align-items: stretch;
-    -webkit-flex-direction: row;
-    -webkit-justify-content: flex-start;
     display: flex;
     flex-direction: row;
     align-items: stretch;
@@ -332,16 +205,12 @@ body * {
     z-index: 1;
     top: 0;
     left: 0;
-
 }
 
 .custom-image.card-back img {
     height: auto;
     top: 0;
     min-height: 191px;
-
-    -webkit-filter: grayscale(1);
-    -moz-filter: grayscale(1);
     filter: grayscale(1);
 }
 
@@ -371,16 +240,12 @@ body * {
     font-size: 12px;
     color: #fff;
     padding: 0 10px;
-    -webkit-transform: translateY(-50%);
-    -moz-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 3;
     transition: all .3s ease;
 }
 
 .card-back .text-layer.align-bottom {
-    -webkit-transform: translateY(0);
-    -moz-transform: translateY(0);
     transform: translateY(0);
     bottom: 20px;
     top: auto;
@@ -390,7 +255,6 @@ body * {
     font-weight: 600;
     display: inline-block;
     font-size: 13px;
-
 }
 
 .card-back .text-layer .office-address {
@@ -428,14 +292,13 @@ body * {
     color: #000000;
     font-size: 10px;
     font-style: italic;
-    border-left: 0;
-    border-right: 0;
     padding: 3px 7px 5px;
     margin: 10px auto;
     position: relative;
     display: inline-block;
     border: 1px solid #000000;
-    border-width: 1px 0 1px 0;
+    border-right-width: 0;
+    border-left-width: 0;
 }
 
 .text-preview .contact-details {
@@ -446,8 +309,6 @@ body * {
     position: absolute;
     bottom: 0;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -455,8 +316,6 @@ body * {
     position: absolute;
     top: 15px;
     left: 50%;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
     transform: translateX(-50%);
 }
 
@@ -496,8 +355,6 @@ body * {
     border-right: 0;
     width: 10px;
     height: 5px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
     z-index: 2;
 }
@@ -517,7 +374,6 @@ body * {
 }
 
 .img-upload-container .btn-upload {
-
     position: absolute;
     z-index: 2;
     top: 50%;
@@ -530,8 +386,6 @@ body * {
     text-align: center;
     color: #fff;
     border-radius: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -moz-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     cursor: pointer;
     box-shadow: 0 0 0 1px #fff;
@@ -574,166 +428,6 @@ body * {
 
 .confirm-message .img-upload-done .custom-image .modify-image {
     display: none !important;
-}
-
-/*Responsive Styles*/
-/***************************************
-     Style for small devices
-****************************************/
-@media screen and (max-width: 699px) {
-    body.bg-loaded {
-        background-size: contain;
-        background-repeat: repeat;
-    }
-
-    body.modal-is-open .wrapper {
-        opacity: 0;
-        height: 0;
-        overflow: hidden;
-    }
-
-    .topbar {
-        padding: 20px 0;
-    }
-
-    .topbar .brand {
-        font-size: 20px;
-    }
-
-    /*  .topbar .tagline {
-         font-size: 15px;
-         text-indent: 50px;
-      }*/
-    .main-content {
-        -webkit-flex-direction: column;
-        flex-direction: column;
-        padding: 0;
-    }
-
-    .layout-area, .preview-area, .form-area {
-        width: 100%;
-        margin: 0 0 15px 0;
-        border-radius: 0;
-    }
-
-    .preview-area {
-        min-width: initial;
-    }
-
-    .card-preview {
-        -webkit-flex-direction: column;
-        flex-direction: column;
-        max-width: 330px;
-        width: 100%;
-        height: auto;
-    }
-
-    .card-back,
-    .card-front {
-        width: 100%;
-        height: 191px
-    }
-
-    .card-front {
-        margin: 0 0 10px 0;
-    }
-
-    .footer {
-        -webkit-justify-content: center;
-        justify-content: center;
-    }
-
-    .outer-preview {
-        padding: 20px 0;
-    }
-
-    .colors-list li {
-        width: 40px;
-        height: 40px;
-    }
-
-    .layout-subtype {
-        max-height: none;
-    }
-
-    .layout-subtype li {
-        padding: 0;
-    }
-
-    #simplemodal-container {
-        width: 100% !important;
-        height: 100% !important;
-        top: 0 !important;
-        bottom: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        border: 0 !important;
-    }
-
-    #simplemodal-container a.modalCloseImg {
-        top: 5px !important;
-        right: 10px !important;
-    }
-
-}
-
-/***************************************
-      Style for small devices
-****************************************/
-@media screen and (min-width: 480px) {
-    .buttons-wrapper .form-row .form-field {
-        display: inline-block;
-    }
-
-    .buttons-wrapper .form-row .card-qty {
-        margin-right: 50px;
-    }
-
-    .tips-conatiner {
-        -webkit-flex-direction: row;
-        flex-direction: row;
-    }
-
-    .tips-conatiner img {
-        margin-right: 20px;
-    }
-}
-
-/***************************************
- Style for tablets (medium size screens)
-****************************************/
-@media screen and (min-width: 700px) and (max-width: 1199px) {
-    .layout-area, .form-area {
-        width: 49%;
-        margin: 0 0 15px 0;
-    }
-
-    .main-content {
-        -webkit-justify-content: space-between;
-        -webkit-flex-wrap: wrap;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
-
-    .preview-area {
-        width: 100%;
-    }
-}
-
-@media screen and (min-width: 700px) {
-    .buttons-wrapper .form-row {
-        display: inline-block;
-        margin-right: 30px;
-    }
-
-    .buttons-wrapper .form-buttons {
-        text-align: right;
-        float: right;
-    }
-
-    .tips-content ul {
-        font-size: 16px;
-    }
 }
 
 /*
@@ -810,10 +504,11 @@ body * {
 Layout area
 */
 .thumbnail-list {
-list-style: none;
-padding: 0;
-margin: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
+
 .thumbnail-list img {
     display: block;
     width: 100%;
@@ -821,12 +516,12 @@ margin: 0;
     cursor: pointer;
     min-height: 75px;
 }
+
 .thumbnail-list li {
     width: 100%;
     min-width: 220px;
     margin-bottom: 5px;
     padding: 7px;
-
 }
 
 .thumbnail-list .selected {
@@ -835,11 +530,13 @@ margin: 0;
     position: relative;
     opacity: 1;
 }
+
 .thumbnail-list .selected:before,
 .thumbnail-list .selected:after {
     position: absolute;
     content: "";
 }
+
 .thumbnail-list .selected:before {
     top: -7px;
     left: -7px;
@@ -849,6 +546,7 @@ margin: 0;
     height: 20px;
     z-index: 1;
 }
+
 .thumbnail-list .selected:after {
     top: -2px;
     left: -3px;
@@ -857,11 +555,10 @@ margin: 0;
     border-right: 0;
     width: 10px;
     height: 5px;
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
     z-index: 2;
 }
+
 .layout-subtype {
     margin: 0;
     padding: 0;
@@ -869,6 +566,7 @@ margin: 0;
     overflow-y: auto;
     max-height: 130px;
 }
+
 .layout-subtype li {
     display: block;
     position: relative;
@@ -876,6 +574,7 @@ margin: 0;
     transition: all .3s ease;
     float: left;
 }
+
 .layout-subtype img {
     width: 90px;
     height: 50px;
@@ -884,15 +583,16 @@ margin: 0;
     display: block;
     transition: all .1s ease;
 }
+
 .layout-subtype img:hover {
     border-color: #fff;
     box-shadow: 0px 0px 5px 1px #999;
 }
+
 .layout-subtype .selected img {
-    border-width: 5px;
-    border-color: #fff;
+    border: 5px solid #fff;
     border-radius: 4px;
-    background-clip: padding-box;
+    /*background-clip: padding-box;*/
 }
 
 .layout-subtype li:after {
@@ -905,20 +605,186 @@ margin: 0;
     border-right: 0;
     width: 10px;
     height: 5px;
-    -webkit-transform: translate(-50%, -50%) rotate(-45deg) scale(0);
-    -moz-transform: translate(-50%, -50%) rotate(-45deg) scale(0);
     transform: translate(-50%, -50%) rotate(-45deg) scale(0);
     z-index: 2;
     opacity: 0;
     transition: all 0.3s ease-in-out;
 }
+
 .layout-subtype li.selected:after {
     opacity: 1;
-    -webkit-transform: translate(-50%, -50%) rotate(-45deg) scale(1);
-    -moz-transform: translate(-50%, -50%) rotate(-45deg) scale(1);
     transform: translate(-50%, -50%) rotate(-45deg) scale(1);
-
 }
+
 .layout-subtype .lightBG:after {
     border-color: #000;
 }
+
+
+/*Responsive Styles*/
+/***************************************
+     Style for small devices
+****************************************/
+@media screen and (max-width: 699px) {
+    body.bg-loaded {
+        background-size: contain;
+        background-repeat: repeat;
+    }
+
+    body.modal-is-open .wrapper {
+        opacity: 0;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .topbar {
+        padding: 20px 0;
+    }
+
+    .topbar .brand {
+        font-size: 20px;
+    }
+
+    /*  .topbar .tagline {
+         font-size: 15px;
+         text-indent: 50px;
+      }*/
+    .main-content {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .layout-area, .preview-area {
+        width: 100%;
+        margin: 0 0 15px 0;
+        border-radius: 0;
+    }
+
+    .preview-area {
+        min-width: initial;
+    }
+
+    .card-preview {
+        flex-direction: column;
+        max-width: 330px;
+        width: 100%;
+        height: auto;
+    }
+
+    .card-back,
+    .card-front {
+        width: 100%;
+        height: 191px
+    }
+
+    .card-front {
+        margin: 0 0 10px 0;
+    }
+
+    .footer {
+        justify-content: center;
+    }
+
+    .outer-preview {
+        padding: 20px 0;
+    }
+
+    .colors-list li {
+        width: 40px;
+        height: 40px;
+    }
+
+    .layout-subtype {
+        max-height: none;
+    }
+
+    .layout-subtype li {
+        padding: 0;
+    }
+
+    #simplemodal-container {
+        width: 100% !important;
+        height: 100% !important;
+        top: 0 !important;
+        bottom: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        border: 0 !important;
+    }
+
+    #simplemodal-container a.modalCloseImg {
+        top: 5px !important;
+        right: 10px !important;
+    }
+
+}
+
+/***************************************
+      Style for small devices
+****************************************/
+@media screen and (min-width: 480px) {
+    .buttons-wrapper .form-row .form-field {
+        display: inline-block;
+    }
+
+    .buttons-wrapper .form-row .card-qty {
+        margin-right: 50px;
+    }
+
+    .tips-conatiner {
+        flex-direction: row;
+    }
+
+    .tips-conatiner img {
+        margin-right: 20px;
+    }
+}
+
+/***************************************
+ Style for tablets (medium size screens)
+****************************************/
+@media screen and (min-width: 700px) and (max-width: 1199px) {
+    .layout-area {
+        width: 49%;
+        /*margin: 0 0 15px 0;*/
+    }
+
+    .main-content {
+        justify-content: space-between;
+        /*flex-wrap: wrap;*/
+    }
+
+    .card-preview {
+        flex-direction: column;
+        max-width: 330px;
+        width: 100%;
+        height: auto;
+    }
+
+    .card-back,
+    .card-front {
+        width: 100%;
+        height: 191px
+    }
+
+    .preview-area {
+        width: 49%;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .buttons-wrapper .form-row {
+        display: inline-block;
+        margin-right: 30px;
+    }
+
+    .buttons-wrapper .form-buttons {
+        text-align: right;
+        float: right;
+    }
+
+    .tips-content ul {
+        font-size: 16px;
+    }
+}
+
